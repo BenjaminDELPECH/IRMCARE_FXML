@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="484.0" prefWidth="646.0">
+         <children>
+            <ImageView fitHeight="484.0" fitWidth="844.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.7;">
+               <image>
+                  <Image url="@Medecin-de-garde.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="353.0" layoutY="100.0" prefHeight="285.0" prefWidth="340.0" style="-fx-background-color: #C7C7C7; -fx-opacity: 0.92; -fx-background-radius: 17; -fx-border-color: #AAAAAA; -fx-border-radius: 17; -fx-padding: 5;">
+               <children>
+                  <TextField alignment="CENTER" layoutX="38.0" layoutY="84.0" prefHeight="48.0" prefWidth="264.0" promptText="Username" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20; -fx-border-color: rgba(0,0,0,0); -fx-opacity: 1;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField alignment="CENTER" layoutX="38.0" layoutY="154.0" prefHeight="48.0" prefWidth="264.0" promptText="password" style="-fx-background-color: #ffffff; -fx-background-radius: 20; -fx-border-color: rgba(0,0,0,0);">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="btnLogin" onAction="#fakeConnexion" layoutX="38.0" layoutY="228.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="264.0" text="Button" />
+                  <Label alignment="CENTER" layoutX="15.0" prefHeight="75.0" prefWidth="311.0" style="-fx-border-radius: 20; -fx-padding: 20;" text="IRM Care -Connexion">
+                     <font>
+                        <Font name="System Italic" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="successLogin" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="9.0" prefHeight="63.0" prefWidth="593.0" style="-fx-background-color: GREEN; -fx-opacity: 0.92; -fx-border-radius: 20; -fx-background-radius: 20;" text="Vous etes connecté !" visible="false">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
